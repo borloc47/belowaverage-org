@@ -1,0 +1,112 @@
+@font-face {
+    font-family:ubuntu;
+    src:url('../font/ubuntu.ttf');
+}
+* {
+    font-family:ubuntu;
+}
+a {
+    text-decoration:none;
+}
+#header {
+    position:fixed;
+    top:0px;
+    left:0px;
+    background-color:#353535;
+    width:100%;
+    height:40px;
+    text-align:center;
+}
+#header .links {
+    text-align:center;
+    min-width:600px;
+    max-width:1000px;
+    display:inline-block;
+    width:100%;
+}
+#header .links .logo {
+    background-image:url('../img/logoWhite.svg');
+    background-size:80% 80%;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+#header .links .logo.active {
+    background-image:url('../img/logoBlack.svg');
+}
+#header .links a {
+    display:inline-block;
+    line-height:30px;
+    height:30px;
+    width:80px;
+    padding:5px;
+    margin-left:calc(10% - 54px);
+    margin-right:calc(10% - 54px);
+    color:white;
+    border-radius:0px;
+}
+#header .links a:first-child {
+    margin-left:0px;
+}
+#header .links a:last-child {
+    margin-right:0px;
+}
+#header .links a:hover {
+    transition:.3s;
+    border-radius:0px;
+}
+#header .links a:active {
+    transition:.3s;
+    background-color:gray;
+    border-radius:100px;
+}
+#header .links a.active {
+    transition:.3s;
+    color:black;
+    background-color:white;
+    border-radius:0px;
+}
+#tabs div.tab {
+    display:none;
+    position:fixed;
+    top:40px;
+    left:0px;
+    width:100%;
+    height:calc(100% - 40px);
+}
+#tabs .bWrap {
+    max-width:1000px;
+    min-width:600px;
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+}
+#tabs div.active {
+    display:block;
+}
+#tabs .topBanner {
+    width:100%;
+    height:200px;
+    background-color:black;
+    text-align:center;
+}
+#tabs div[tid=home] .topBanner {
+    background-image:url('../img/homeBanner.png'), url('../img/homeBanner2.png');
+    background-repeat:no-repeat;
+    background-position:calc(50% - 208px) 50%, 0px 0px;
+    background-size:auto, 100% 100%;
+}
+#tabs div[tid=home] .topBanner .logo {
+    background-image:url('../img/logoWhite.svg');
+    background-size:100% 100%;
+    width:120px;
+    height:120px;
+    display:inline-block;
+    margin-top:45px;
+    vertical-align:66px;
+}
+#tabs div[tid=home] .topBanner .ba {
+    font-size:60px;
+    color:white;
+    line-height:100px;
+    display:inline-block;
+}
