@@ -11,4 +11,10 @@ $(document).ready(function() {
     window.onhashchange = function() {
         changeTab(window.location.hash);
     };
+    $('#sb').click(function() {
+        $('#homePrev').addClass('swanimate');
+        setTimeout(function() {
+            window.location = 'https://webdows.belowaverage.org/';
+        }, 2500);
+    });
 });
