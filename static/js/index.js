@@ -14,7 +14,7 @@ $(document).ready(function() {
     $('#sb').click(function() {
         $('#homePrev').addClass('swanimate');
         setTimeout(function() {
-            window.location = 'https://webdows.belowaverage.org/';
+            window.location = 'https://belowaverage.org/webdows/';
         }, 2500);
     });
 });
