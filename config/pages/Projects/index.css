@@ -1,39 +1,31 @@
-#header {
-    background-color:#008080;
-}
-body {
-    background-color:#008080;
-}
-#tab .topBanner.swanimate, #header.swanimate {
-    animation: swanim4 2s ease forwards;
-}
-#tab .topBanner {
+#tabs div[tid=home] .topBanner {
     background-color:#00cece;
 }
-#tab .topBanner .logo {
-    background-image:url('static/img/logoWhite.svg');
+#tabs div[tid=home] .topBanner .logo {
+    background-image:url('../img/logoWhite.svg');
     background-size:100% 100%;
     width:120px;
     height:120px;
     display:inline-block;
     vertical-align:24px;
 }
-#tab .topBanner .ba {
+#tabs div[tid=home] .topBanner .ba {
     color:white;
     line-height:100px;
     display:inline-block;
     text-shadow:4px 4px #008080;
 }
-#tab #homePrev {
+#tabs div[tid=home] #homePrev {
     display:block;
     width:100%;
     height:calc(100% - 240px);
     min-width:600px;
+    background-color:#008080;
     position:fixed;
     bottom:0px;
     left:0px;
 }
-#tab #homePrev #sb {
+#tabs div[tid=home] #homePrev #sb {
     position:absolute;
     bottom:calc(50% - 50px);
     left:calc(50% - 190px);
@@ -47,14 +39,14 @@ body {
     background-color:#D2CEC6;
     cursor:pointer;
     font-size:40px;
-    background-image:url('config/pages/Home/static/so3.png');
+    background-image:url('../img/home/so3.png');
     background-repeat:no-repeat;
     background-size:100px 100px;
     text-align:right;
     padding-right:10px;
     color:black;
 }
-#tab #homePrev #sb:active {
+#tabs div[tid=home] #homePrev #sb:active {
     box-shadow: inset 3px 3px 0px #808080, inset -3px -3px 0px #D2CEC6;
     border-top: 3px solid #424242;
     border-left: 3px solid #424242;
@@ -64,28 +56,23 @@ body {
     text-shadow: 3px 3px 0px black;
     background-position:3px 3px;
 }
-#tab #homePrev #start {
+#tabs div[tid=home] #homePrev #start {
     line-height:100px;
     display:inline-block;
     vertical-align:top;
 }
-#tab #homePrev.swanimate {
+#tabs div[tid=home] #homePrev.swanimate {
     animation: swanim2 2s ease forwards;
 }
-#tab #homePrev.swanimate #sb {
-    animation: swanim .7s ease forwards, swanim3 2s ease-in-out forwards;
+#tabs div[tid=home] #homePrev.swanimate #sb {
+    animation: swanim 1s ease forwards, swanim3 2.5s ease-in-out forwards;
 }
 @keyframes swanim2 {
-    30% {
+    50% {
         position:fixed;
         width:100%;
         height:100%;
-        background-color:transparent;
-    } 50% {
-        position:fixed;
-        width:100%;
-        height:100%;
-        background-color:transparent;
+        background-color:black;
     } 100% {
         position:fixed;
         width:100%;
@@ -94,19 +81,14 @@ body {
     }
 }
 @keyframes swanim3 {
-    30% {
-        background-image:url('config/pages/Home/static/so3.png');
-    } 50% {
-        background-image:url('config/pages/Home/static/so3.png');
+     50% {
+        opacity:1;
+        transform:scale(1);
+        background-image:url('../img/home/so2.png');
     } 100% {
-        background-image:url('config/pages/Home/static/so2.png');
-    }
-}
-@keyframes swanim4 {
-    30% {
-        transform:translate(0px, -240px);
-    } 100% {
-        transform:translate(0px, -240px);
+        opacity:0;
+        transform:scale(0);
+        background-image:url('../img/home/so3.png');
     }
 }
 @keyframes swanim {
@@ -126,6 +108,6 @@ body {
         width:200px;
         height:200px;
         background-size:200px 200px;
-        background-image:url('config/pages/Home/static/so2.png');
+        background-image:url('../img/home/so2.png');
     }
 }
