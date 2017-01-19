@@ -1,1 +1,0 @@
-$('#sb').click(function() { $('#homePrev').addClass('swanimate'); setTimeout(function() { window.location = 'https://belowaverage.org/webdows/'; }, 2500); });

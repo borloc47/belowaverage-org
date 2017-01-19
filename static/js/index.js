@@ -1,5 +1,9 @@
 var mem = {};
 function loadTab(tid) {
+    var top = setTimeout(";");
+    for(var i = 0; i < top; i++) {
+        clearTimeout(i); 
+    }
     $('#tab, #tabStyle').html('');
     if(typeof mem[tid].html == 'string') {
         $('#tab').html(mem[tid].html);
@@ -15,12 +19,13 @@ function changeTab(tid) {
     if(tid == '') {
         tid = 'Home';
     }
-    tid = tid.replace('#', '');
+    if(typeof mem[tid] !== 'object') {
+        mem[tid] = {};
+    }
     $('#header .links a').removeClass('active');
     $('#header .links a[tid='+tid+']').addClass('active');
-    if(typeof mem[tid] !== 'object') {
+    if(typeof mem[tid].html !== 'string') {
         $.get('config/pages/'+tid+'/index.html', function(html) {
-            mem[tid] = {};
             mem[tid].html = html;
             $.get('config/pages/'+tid+'/index.js', function(js) {
                 mem[tid].js = js;
@@ -32,11 +37,29 @@ function changeTab(tid) {
                 });
             });
         }).fail(function() {
-            alert('404'); //do something neat here
+            changeTab('notfound');
         });
     } else {
         loadTab(tid);
     }
+}
+function hashChange() {
+    tid = window.location.hash.split(',').shift().replace('#', '');
+    if(typeof mem[tid] !== 'object') {
+        mem[tid] = {};
+    }
+    var hash = window.location.hash;
+    hash = hash.split(',');
+    hash.shift();
+    mem[tid].hash = {};
+    $.each(hash, function() {
+        data = this.split('.');
+        if(typeof data[1] == 'undefined') {
+            data[1] = null;
+        }
+        mem[tid].hash[data[0]] = data[1];
+    });
+    changeTab(tid);
 }
 $(document).ready(function() {
     $.getJSON('config/main.json', function(data) {
@@ -44,8 +67,6 @@ $(document).ready(function() {
             $('#header .links').append('<a href="#'+this+'" tid="'+this+'">'+this+'</a>');
         });
     });
-    changeTab(window.location.hash);
-    window.onhashchange = function() {
-        changeTab(window.location.hash);
-    };
+    hashChange();
 });
+window.onhashchange = hashChange;

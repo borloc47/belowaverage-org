@@ -4,4 +4,7 @@ mcDash
 Who's Online?
 Chicken Killer
 CF Net
-Inventory
+Simple Inventory
+B&H Drawing Game
+ABS
+Skin Stamper
