@@ -1,0 +1,113 @@
+#header .links a.active {
+    background-color:#f3f3f3;
+}
+#tab {
+    background-color:#f3f3f3;
+    text-align:center;
+}
+#tab .bWrap {
+    max-width:1100px;
+}
+.gal {
+    display:inline-block;
+    width:200px;
+    height:200px;
+    position:relative;
+    margin:70px;
+    color:inherit;
+}
+.gal:hover .img.p1 {
+    transform:rotate(12deg) translateX(60px);
+}
+.gal:hover .img.p3 {
+    transform:rotate(-12deg) translateX(-60px);
+}
+.gal .img {
+    width:180px;
+    height:130px;
+    position:absolute;
+    top:0px;
+    left:0px;
+    background-image:url('static/img/gallery.svg');
+    background-size:contain;
+    background-color:white;
+    background-repeat:no-repeat;
+    background-position:50%;
+    box-shadow:0px 0px 10px rgba(0,0,0,.1);
+    border:10px solid white;
+    transition:.3s;
+}
+.gal .img.p1 {
+    z-index:-1;
+    transform:rotate(10deg) translateX(50px);
+}
+.gal .img.p2 {
+    z-index:-2;
+}
+.gal .img.p3 {
+    z-index:-3;
+    transform:rotate(-10deg) translateX(-50px);
+}
+.gal .ttl {
+    position:absolute;
+    bottom:0px;
+    left:0px;
+    width:100%;
+    text-align:center;
+    font-size: 20px;
+}
+#slides {
+    background-color:#353535;
+    position:fixed;
+    width:100%;
+    height:calc(100% - 40px);
+    top:40px;
+    left:0px;
+    display:none;
+    color:white;
+}
+#slides .butt {
+    position:absolute;
+    width:80px;
+    height:50px;
+    top:calc(50% - 25px);
+    font-size:80px;
+    line-height:50px;
+    color:inherit;
+}
+#slides .butt.left {
+    left:10px;
+}
+#slides .butt.right {
+    right:10px;
+}
+#slides #im {
+    position:absolute;
+    width:calc(100% - 200px);
+    height:calc(100% - 120px);
+    left:100px;
+    top:60px;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:contain;
+}
+#slides #ttl {
+    font-size:40px;
+    line-height:50px;
+    height:50px;
+}
+#slides #ttl #t {
+    vertical-align:middle;
+}
+#slides #ttl #n {
+    font-size:25px;
+    margin-left:20px;
+}
+#slides #des {
+    position:absolute;
+    bottom:0px;
+    width:100%;
+    font-size:25px;
+    line-height:25px;
+    height:50px;
+}

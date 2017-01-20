@@ -8,7 +8,7 @@
 pre {
     margin:0;
     display:none;
-    font-size:16px;
+    font-size:28px;
     vertical-align:top;
 }
 #header, body {
@@ -16,8 +16,16 @@ pre {
     color:white;
 }
 #cursor {
-    width:8px;
-    height:16px;
+    width:12px;
+    height:24px;
     background-color:white;
     display:inline-block;
+}
+#tab {
+overflow:hidden;
+filter:blur(1px);   
+}
+#loady {
+font-size:28px;
+display:inline-block;
 }

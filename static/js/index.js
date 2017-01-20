@@ -4,7 +4,6 @@ function loadTab(tid) {
     for(var i = 0; i < top; i++) {
         clearTimeout(i); 
     }
-    $('#tab, #tabStyle').html('');
     if(typeof mem[tid].html == 'string') {
         $('#tab').html(mem[tid].html);
     }
@@ -22,13 +21,18 @@ function changeTab(tid) {
     if(typeof mem[tid] !== 'object') {
         mem[tid] = {};
     }
+    $('#tab, #tabStyle').html('');
     $('#header .links a').removeClass('active');
     $('#header .links a[tid='+tid+']').addClass('active');
     if(typeof mem[tid].html !== 'string') {
         $.get('config/pages/'+tid+'/index.html', function(html) {
             mem[tid].html = html;
-            $.get('config/pages/'+tid+'/index.js', function(js) {
-                mem[tid].js = js;
+            $.ajax({
+                url: 'config/pages/'+tid+'/index.js',
+                dataType: 'text',
+                success: function(js) {
+                    mem[tid].js = js;
+                }
             }).always(function() {
                 $.get('config/pages/'+tid+'/index.css', function(css) {
                     mem[tid].css = css;
@@ -66,7 +70,7 @@ $(document).ready(function() {
         $.each(data.pages, function() {
             $('#header .links').append('<a href="#'+this+'" tid="'+this+'">'+this+'</a>');
         });
+        hashChange();
     });
-    hashChange();
 });
 window.onhashchange = hashChange;
