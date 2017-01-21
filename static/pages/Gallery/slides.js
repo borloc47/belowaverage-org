@@ -22,7 +22,7 @@ if(typeof mem.Gallery.hash.view == 'string') {
         $('#slides #n').html((parseInt(num) + 1)+'/'+tot);
         $('#slides #t').html(view);
         $('#slides #des').html(viewObj[key]);
-        $('#slides #im').css('background-image','url(\'config/pages/Gallery/static/'+view+'/'+key+'\')');
+        $('#slides #im').css('background-image','url(\'static/img/gallery/'+view+'/'+key+'\')');
         $(document).bind('keydown', function(e){
             if (e.keyCode == 37) {
                window.location.href = $('#slides .butt.left').attr('href');

@@ -25,16 +25,16 @@ function changeTab(tid) {
     $('#header .links a').removeClass('active');
     $('#header .links a[tid='+tid+']').addClass('active');
     if(typeof mem[tid].html !== 'string') {
-        $.get('config/pages/'+tid+'/index.html', function(html) {
+        $.get('static/pages/'+tid+'/index.html', function(html) {
             mem[tid].html = html;
             $.ajax({
-                url: 'config/pages/'+tid+'/index.js',
+                url: 'static/pages/'+tid+'/index.js',
                 dataType: 'text',
                 success: function(js) {
                     mem[tid].js = js;
                 }
             }).always(function() {
-                $.get('config/pages/'+tid+'/index.css', function(css) {
+                $.get('static/pages/'+tid+'/index.css', function(css) {
                     mem[tid].css = css;
                 }).always(function() {
                     loadTab(tid);

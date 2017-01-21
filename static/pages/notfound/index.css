@@ -1,6 +1,6 @@
 @font-face {
     font-family:vga;
-    src:url('config/pages/notfound/src/font.ttf');
+    src:url('static/font/notfound.ttf');
 }
 * {
     font-family:vga;

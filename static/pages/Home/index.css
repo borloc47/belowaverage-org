@@ -47,7 +47,7 @@ body {
     background-color:#D2CEC6;
     cursor:pointer;
     font-size:40px;
-    background-image:url('config/pages/Home/static/so3.png');
+    background-image:url('static/img/home/so3.png');
     background-repeat:no-repeat;
     background-size:100px 100px;
     text-align:right;
@@ -95,11 +95,11 @@ body {
 }
 @keyframes swanim3 {
     30% {
-        background-image:url('config/pages/Home/static/so3.png');
+        background-image:url('static/img/home/so3.png');
     } 50% {
-        background-image:url('config/pages/Home/static/so3.png');
+        background-image:url('static/img/home/so3.png');
     } 100% {
-        background-image:url('config/pages/Home/static/so2.png');
+        background-image:url('static/img/home/so2.png');
     }
 }
 @keyframes swanim4 {
@@ -126,6 +126,6 @@ body {
         width:200px;
         height:200px;
         background-size:200px 200px;
-        background-image:url('config/pages/Home/static/so2.png');
+        background-image:url('static/img/home/so2.png');
     }
 }
