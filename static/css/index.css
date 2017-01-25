@@ -2,6 +2,14 @@
     font-family:ubuntu;
     src:url('../font/ubuntu.ttf');
 }
+@font-face {
+    font-family:icons;
+    src:url('../font/icons.ttf');
+}
+@font-face {
+    font-family:logo;
+    src:url('../font/logo.ttf');
+}
 body {
     color:#353535;
 }
@@ -38,13 +46,9 @@ a {
     width:100%;
 }
 #header .links .logo {
-    background-image:url('../img/logoWhite.svg');
-    background-size:auto 80%;
-    background-position:center;
-    background-repeat:no-repeat;
-}
-#header .links .logo.active {
-    background-image:url('../img/logoBlack.svg');
+    font-family:logo;
+    vertical-align:top;
+    font-size:18px;
 }
 #header .links a {
     display:inline-block;

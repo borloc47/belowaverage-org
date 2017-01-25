@@ -21,14 +21,15 @@
         "4.jpg": "mcDash Player Profile",
         "5.jpg": "mcDash Admin Settings"
     },
-    "CF Net": {
-        "6.jpg": "CF Net Recent News & Events tab",
-        "7.jpg": "CF Net Live Weather Tab",
-        "1.jpg": "CF Net Admin Login",
-        "2.jpg": "CF Net Admin Page",
-        "3.jpg": "CF Net Admin Bulletin Post",
-        "4.jpg": "CF Net Admin Bulletin Management",
-        "5.jpg": "CF Net Admin Link Management"
+    "Whos Online": {
+        "1.jpg": "Who's Online?",
+        "2.jpg": "White Theme",
+        "3.jpg": "CobbleStone Theme",
+        "4.jpg": "Obsidian Theme, Menu Open",
+        "5.jpg": "White Theme, Menu Open",
+        "6.jpg": "Dark Theme, Menu Open",
+        "7.jpg": "Obsidian Theme",
+        "8.jpg": "Nobody is online."
     },
     "Chicken Killer": {
         "1.png": "Home page.",
@@ -47,5 +48,23 @@
         "14.png": "Publishing a schedule.",
         "15.png": "Printing the schedule.",
         "16.png": "A team member viewing the schedule that was published."
+    },
+    "CF Net": {
+        "6.jpg": "CF Net Recent News & Events tab",
+        "7.jpg": "CF Net Live Weather Tab",
+        "1.jpg": "CF Net Admin Login",
+        "2.jpg": "CF Net Admin Page",
+        "3.jpg": "CF Net Admin Bulletin Post",
+        "4.jpg": "CF Net Admin Bulletin Management",
+        "5.jpg": "CF Net Admin Link Management"
+    },
+    "Simple Inventory": {
+        "1.png":"All Categories",
+        "2.png":"Select a category",
+        "3.png":"Add or remove a category",
+        "4.png":"Selected category",
+        "5.png":"Add items",
+        "6.png":"Change item",
+        "7.png":"Print receipt of items in the selected category"
     }
 }

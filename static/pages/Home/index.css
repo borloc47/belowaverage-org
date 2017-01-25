@@ -11,12 +11,11 @@ body {
     background-color:#00cece;
 }
 #tab .topBanner .logo {
-    background-image:url('static/img/logoWhite.svg');
-    background-size:100% 100%;
-    width:120px;
-    height:120px;
     display:inline-block;
-    vertical-align:24px;
+    vertical-align:-12px;
+    font-family:logo;
+    font-size:70px;
+    margin-right:30px;
 }
 #tab .topBanner .ba {
     color:white;
