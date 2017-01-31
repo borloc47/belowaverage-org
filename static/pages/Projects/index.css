@@ -23,8 +23,13 @@
     position:absolute;
     width:580px;
 }
+.text div span.slogan {
+    top:40px;
+    font-size:20px;
+    text-shadow:2px 2px 0px rgba(0,0,0,.1);
+}
 .text div a {
-    float:right;
+    float:Right;
     margin-top:160px;
     margin-right:5px;
     font-size:20px;
@@ -34,11 +39,19 @@
     color:white;
     background-repeat:no-repeat;
     padding-left:30px;
+    padding-right:5px;
     transition:.3s;
     box-shadow:inset 0px 0px 0px white;
     position:relative;
     text-shadow:1px 1px 0px rgba(0,0,0,.15);
     margin-left:5px;
+    outline:1px solid transparent;
+}
+.text div a.left {
+    float:left;
+}
+.text div a.right {
+    float:right;
 }
 .text div a::before {
     position:absolute;
@@ -50,12 +63,6 @@
     box-shadow:inset 0px -3px 0px white;
     background-color:rgba(0,0,0,.1);
 }
-.text div a:active {
-    transition:0s;
-    box-shadow:inset 0px -3px 0px black;
-    background-color:black;
-    color:white;
-}
 .text div a.github::before {
     content:"B";
 }
@@ -64,6 +71,9 @@
 }
 .text div a.gallery::before {
     content:"G";
+}
+.text div a.info::before {
+    content:"I";
 }
 #colorBars {
     position:absolute;

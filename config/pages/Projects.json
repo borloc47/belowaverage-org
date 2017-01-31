@@ -1,8 +1,13 @@
 {
     "Webdows": {
-        "desc": "Test 123",
+        "slogan": "Test 123",
+        "background": "./here",
+        "color": "#000",
+        "info": "BLah Blah",
         "links": {
-            "Demo": "http://asdf/"
+            "Demo": "http://asdf/",
+            "Gallery": "#",
+            "GitHub": "https://github.com/belowaverage-org/webdows"
         }
     }
 }
