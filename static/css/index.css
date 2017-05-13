@@ -107,3 +107,6 @@ a {
     font-size:60px;
     padding-top:45px;
 }
+#tab .center {
+    text-align:center;
+}

@@ -1,13 +1,139 @@
 {
     "Webdows": {
-        "slogan": "Test 123",
-        "background": "./here",
-        "color": "#000",
-        "info": "BLah Blah",
+        "slogan": "A Dynamic \"Webulation\" of Microsoft Windows.",
+        "background": "static/img/projects/webdows.png",
         "links": {
-            "Demo": "http://asdf/",
-            "Gallery": "#",
-            "GitHub": "https://github.com/belowaverage-org/webdows"
+			"GitHub": {
+				"href": "https://github.com/belowaverage-org/webdows",
+				"class": "github",
+				"target": "_blank"
+			},
+			"Gallery": {
+				"href": "#Gallery,view.Webdows",
+				"class": "gallery"
+			},
+            "Demo": {
+				"href": "#Home,start",
+				"class": "demo",
+				"target": "_blank"
+			}
+        }
+    },
+	"mcDash": {
+        "slogan": "An Advanced Minecraft Server Dashboard",
+        "background": "static/img/projects/mcdash.png",
+        "links": {
+			"GitHub": {
+				"href": "https://github.com/belowaverage-org/mcDash",
+				"class": "github",
+				"target": "_blank"
+			},
+			"Gallery": {
+				"href": "#Gallery,view.mcDash",
+				"class": "gallery"
+			},
+            "Planet Minecraft": {
+				"href": "http://www.planetminecraft.com/mod/mcdash---php-dashboard-script/",
+				"target": "_blank"
+			},
+			"SpigotMC": {
+				"href": "https://www.spigotmc.org/resources/mcdash.4833/",
+				"target": "_blank"
+			}
+        }
+    },
+	"Who's Online?": {
+        "slogan": "A Dynamic \"Webulation\" of Microsoft Windows.",
+        "background": "static/img/projects/whoonline.png",
+        "links": {
+			"GitHub": {
+				"href": "https://github.com/krisdb2009/Who-s-Online",
+				"class": "github",
+				"target": "_blank"
+			},
+			"Gallery": {
+				"href": "#Gallery,view.Whos Online",
+				"class": "gallery"
+			},
+            "Planet Minecraft": {
+				"href": "http://www.planetminecraft.com/mod/php-online-list-query/",
+				"target": "_blank"
+			}
+        }
+    },
+	"Chicken Killer": {
+        "slogan": "A PHP Employee Scheduling System",
+        "background": "static/img/projects/chickenk.png",
+        "links": {
+			"GitHub": {
+				"href": "https://github.com/krisdb2009/Chicken-Killer",
+				"class": "github",
+				"target": "_blank"
+			},
+			"Gallery": {
+				"href": "#Gallery,view.Chicken Killer",
+				"class": "gallery"
+			}
+        }
+    },
+	"Webdows": {
+        "slogan": "A Dynamic \"Webulation\" of Microsoft Windows.",
+        "background": "static/img/projects/webdows.png",
+        "links": {
+			"GitHub": {
+				"href": "https://github.com/belowaverage-org/webdows",
+				"class": "github",
+				"target": "_blank"
+			},
+			"Gallery": {
+				"href": "#Gallery,view.Webdows",
+				"class": "gallery"
+			},
+            "Demo": {
+				"href": "#Home,start",
+				"class": "demo",
+				"target": "_blank"
+			}
+        }
+    },
+	"Webdows": {
+        "slogan": "A Dynamic \"Webulation\" of Microsoft Windows.",
+        "background": "static/img/projects/webdows.png",
+        "links": {
+			"GitHub": {
+				"href": "https://github.com/belowaverage-org/webdows",
+				"class": "github",
+				"target": "_blank"
+			},
+			"Gallery": {
+				"href": "#Gallery,view.Webdows",
+				"class": "gallery"
+			},
+            "Demo": {
+				"href": "#Home,start",
+				"class": "demo",
+				"target": "_blank"
+			}
+        }
+    },
+	"Webdows": {
+        "slogan": "A Dynamic \"Webulation\" of Microsoft Windows.",
+        "background": "static/img/projects/webdows.png",
+        "links": {
+			"GitHub": {
+				"href": "https://github.com/belowaverage-org/webdows",
+				"class": "github",
+				"target": "_blank"
+			},
+			"Gallery": {
+				"href": "#Gallery,view.Webdows",
+				"class": "gallery"
+			},
+            "Demo": {
+				"href": "#Home,start",
+				"class": "demo",
+				"target": "_blank"
+			}
         }
     }
 }

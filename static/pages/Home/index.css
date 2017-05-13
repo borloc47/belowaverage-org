@@ -1,14 +1,14 @@
 #header {
-    background-color:#008080;
+    background-color:rgba(0,128,128,.8);
 }
 body {
-    background-color:#008080;
+    background-image:url('static/img/home/filter.png');
 }
 #tab .topBanner.swanimate, #header.swanimate {
     animation: swanim4 2s ease forwards;
 }
 #tab .topBanner {
-    background-color:#00cece;
+    background-color:rgba(0,165,165,.7);
 }
 #tab .topBanner .logo {
     display:inline-block;
@@ -24,6 +24,7 @@ body {
     text-shadow:4px 4px #008080;
 }
 #tab #homePrev {
+    background-color:rgba(0,128,128,.8);
     display:block;
     width:100%;
     height:calc(100% - 240px);

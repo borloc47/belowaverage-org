@@ -1,40 +1,59 @@
-.text div, .img div {
-    display:block;
+#header {
+	background-color:black;
+}
+#header .links a.active {
+	color:black;
+}
+.topBanner {
+	color:black;
+	text-shadow:3px 3px 0px #e4e4e4;
+}
+#projs .proj .ttl {
+	font-size:30px;
+	padding-top:5px;
+	padding-bottom:5px;
+	text-shadow:2px 2px 0px rgba(0,0,0,.15);
+}
+#projs .head {
+	position:absolute;
+	width:100%;
+}
+#projs .slogan, #projs .ttl, #projs .links {
+	background-color:;
+}
+#projs .proj {
+    display:inline-block;
+    width:100%;
     height:200px;
+    vertical-align:top;
+    margin-bottom:80px;
+	color:white;
+	position:relative;
+	text-shadow:1px 1px 0px rgba(0,0,0,.15);
+	overflow:hidden;
+	background:black;
 }
-.img {
-    position:absolute;
-    top:0px;
-    z-index:-1;
-    width:100%;
+#projs .proj img {
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	opacity:.2;
+	filter:blur(3px);
+	background-size:100% 100%;
 }
-.img .bWrap div {
-    background-size:100% 100%;
-    background-color:rgba(0,0,0,.3);
-    opacity:.3;
-    width:100%;
+#projs .proj .links {
+	position:absolute;
+	bottom:0px;
+	width:100%;
+	height:38px;
+	vertical-align:bottom;
 }
-.text div span {
-    line-height:80px;
-    font-size:50px;
-    padding-left:20px;
-    color:white;
-    text-shadow:3px 3px 0px rgba(0,0,0,.1);
-    position:absolute;
-    width:580px;
-}
-.text div span.slogan {
-    top:40px;
-    font-size:20px;
-    text-shadow:2px 2px 0px rgba(0,0,0,.1);
-}
-.text div a {
-    float:Right;
-    margin-top:160px;
+#projs .proj a {
     margin-right:5px;
-    font-size:20px;
+    font-size:16px;
     text-shadow:none;
-    line-height:15px;
     padding:10px;
     color:white;
     background-repeat:no-repeat;
@@ -46,44 +65,26 @@
     text-shadow:1px 1px 0px rgba(0,0,0,.15);
     margin-left:5px;
     outline:1px solid transparent;
+	line-height:38px;
 }
-.text div a.left {
-    float:left;
-}
-.text div a.right {
-    float:right;
-}
-.text div a::before {
+#projs .proj a::before {
     position:absolute;
     left:6px;
     font-family:icons;
     content:"A";
 }
-.text div a:hover {
-    box-shadow:inset 0px -3px 0px white;
-    background-color:rgba(0,0,0,.1);
+#projs .proj a:hover {
+    background-color:rgba(255,255,255,.1);
 }
-.text div a.github::before {
+#projs .proj a.github::before {
     content:"B";
 }
-.text div a.demo::before {
+#projs .proj a.demo::before {
     content:"H";
 }
-.text div a.gallery::before {
+#projs .proj a.gallery::before {
     content:"G";
 }
-.text div a.info::before {
+#projs .proj a.info::before {
     content:"I";
-}
-#colorBars {
-    position:absolute;
-    top:0px;
-    left:0px;
-    width:100%;
-    z-index:-2;
-}
-#colorBars div {
-    display:block;
-    height:200px;
-    width:100%;
 }
