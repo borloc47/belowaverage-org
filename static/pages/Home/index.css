@@ -1,7 +1,15 @@
 #header {
     background-color:rgba(0,128,128,.8);
 }
-body {
+body::before {
+	content:'';
+	position:fixed;
+	top:0px;
+	left:0px;
+	height:100%;
+	width:100%;
+	background-size:cover;
+	background-position:center;
     background-image:url('static/img/home/filter.png');
 }
 #tab .topBanner.swanimate, #header.swanimate {
