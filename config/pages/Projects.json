@@ -17,7 +17,8 @@
 				"class": "demo",
 				"target": "_blank"
 			}
-        }
+        },
+		"expand": "Webdows is a dynamic window API for the web browser designed to look and feel like Microsoft Windows<br><br>2015 - Present<br><br>Latest Stable: 6.0.0000<br><br><h3>Features</h3><ul><li>Simple API</li><li>Built in preloader</li><li>Well documented</li><li>Supported by Chrome, Safari, Firefox, Edge, and IE 10+</li><li>Utilizes jQuery</li><li>99% CSS vector design. Bitmaps rarely used for styling</li><li>Customizable themes</li></ul>"
     },
 	"mcDash": {
         "slogan": "An Advanced Minecraft Server Dashboard",
@@ -73,66 +74,6 @@
 			"Gallery": {
 				"href": "#Gallery,view.Chicken Killer",
 				"class": "gallery"
-			}
-        }
-    },
-	"Webdows": {
-        "slogan": "A Dynamic \"Webulation\" of Microsoft Windows.",
-        "background": "static/img/projects/webdows.png",
-        "links": {
-			"GitHub": {
-				"href": "https://github.com/belowaverage-org/webdows",
-				"class": "github",
-				"target": "_blank"
-			},
-			"Gallery": {
-				"href": "#Gallery,view.Webdows",
-				"class": "gallery"
-			},
-            "Demo": {
-				"href": "#Home,start",
-				"class": "demo",
-				"target": "_blank"
-			}
-        }
-    },
-	"Webdows": {
-        "slogan": "A Dynamic \"Webulation\" of Microsoft Windows.",
-        "background": "static/img/projects/webdows.png",
-        "links": {
-			"GitHub": {
-				"href": "https://github.com/belowaverage-org/webdows",
-				"class": "github",
-				"target": "_blank"
-			},
-			"Gallery": {
-				"href": "#Gallery,view.Webdows",
-				"class": "gallery"
-			},
-            "Demo": {
-				"href": "#Home,start",
-				"class": "demo",
-				"target": "_blank"
-			}
-        }
-    },
-	"Webdows": {
-        "slogan": "A Dynamic \"Webulation\" of Microsoft Windows.",
-        "background": "static/img/projects/webdows.png",
-        "links": {
-			"GitHub": {
-				"href": "https://github.com/belowaverage-org/webdows",
-				"class": "github",
-				"target": "_blank"
-			},
-			"Gallery": {
-				"href": "#Gallery,view.Webdows",
-				"class": "gallery"
-			},
-            "Demo": {
-				"href": "#Home,start",
-				"class": "demo",
-				"target": "_blank"
 			}
         }
     }

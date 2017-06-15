@@ -41,7 +41,6 @@
 	height:100%;
 	opacity:.2;
 	filter:blur(3px);
-	background-size:100% 100%;
 }
 #projs .proj .links {
 	position:absolute;
@@ -87,4 +86,15 @@
 }
 #projs .proj a.info::before {
     content:"I";
+}
+#projs .proj.expanded img {
+	filter: blur(20px);
+}
+#projs .proj.expanded {
+	height:500px;
+}
+ul {
+	display:inline-block;
+	margin:auto;
+	text-align:left;
 }

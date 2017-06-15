@@ -66,5 +66,27 @@
         "5.png":"Add items",
         "6.png":"Change item",
         "7.png":"Print receipt of items in the selected category"
-    }
+    },
+	"Webdows Background": {
+        "1.jpg":"Finalized Background",
+        "2.jpg":"Raw head on shot",
+        "3.jpg":"Raw head on shot with more exposure",
+        "4.jpg":"Raw head on shot",
+        "5.jpg":"Raw head on shot",
+        "6.jpg":"Angled shot with glass diffusing image",
+        "7.jpg":"Raw head on shot",
+		"8.jpg":"Angled shot with glass diffusing image"
+    },
+	"Skin Stamper": {
+		"1.jpg":"Username and stamp selection form",
+		"3.jpg":"Loading screen with dancing duane",
+		"4.jpg":"Comparison of both skins in 3D with option to keep or discard"
+	},
+	"B&H": {
+		"5.jpg":"Login page",
+		"2.jpg":"",
+		"3.jpg":"",
+		"4.jpg":"Comparison of both skins in 3D with option to keep or discard",
+		"1.jpg":"Comparison of both skins in 3D with option to keep or discard"
+	}
 }
