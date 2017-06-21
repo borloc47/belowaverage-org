@@ -67,6 +67,7 @@ function hashChange() {
 }
 $(document).ready(function() {
     $.getJSON('config/main.json', function(data) {
+		mem.main = data;
         $.each(data.pages, function() {
             $('#header .links').append('<a href="#'+this+'" tid="'+this+'">'+this+'</a>');
         });

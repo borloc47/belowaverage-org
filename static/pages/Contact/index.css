@@ -1,0 +1,32 @@
+#header {
+	background-color:rgb(187, 101, 0);
+}
+h2, .topBanner, #header .active, input[type=submit] {
+	color:rgb(187, 101, 0) !important;
+}
+ul  {
+	display:inline-block;
+	margin:auto;
+	text-align:right;
+	margin-bottom:50px;
+	width:500px;
+}
+input, textarea {
+	border:1px solid rgb(187, 101, 0);
+	padding:5px;
+	font-size:14px;
+	background-color:white;
+}
+input {
+	width:500px;
+	height:20px;
+	line-height:20px;
+}
+input[type=submit] {
+	width:510px;
+	height:30px;
+}
+textarea {
+	width:500px;
+	height:100px;
+}

@@ -88,10 +88,14 @@
     content:"I";
 }
 #projs .proj.expanded img {
-	filter: blur(20px);
+	filter: blur(50px);
 }
 #projs .proj.expanded {
-	height:500px;
+	position:absolute;
+	top:0px;
+	left:0px;
+	height:100%;
+	margin-bottom:0px;
 }
 ul {
 	display:inline-block;

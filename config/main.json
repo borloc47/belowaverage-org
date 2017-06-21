@@ -1,9 +1,9 @@
 {
+	"thumbDomain": "beta.belowaverage.org",
     "pages": [
+		"Services",
         "Projects",
-        "Services",
         "Gallery",
-        "About",
         "Contact"
     ]
 }

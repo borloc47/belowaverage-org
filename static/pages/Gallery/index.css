@@ -17,10 +17,13 @@
     color:inherit;
 }
 .gal:hover .img.p1 {
-    transform:rotate(12deg) translateX(60px);
+    transform:rotate(10deg) translateX(70px);
+}
+.gal:hover .img.p2 {
+	transform:rotateY(0deg);
 }
 .gal:hover .img.p3 {
-    transform:rotate(-12deg) translateX(-60px);
+	transform:rotate(-10deg) translateX(-70px);
 }
 .gal .img {
     width:180px;
@@ -39,14 +42,15 @@
 }
 .gal .img.p1 {
     z-index:-1;
-    transform:rotate(10deg) translateX(50px);
+	transform:rotate(0deg) translateX(40px) perspective(500px) rotateY(30deg) translateX(10px);
 }
 .gal .img.p2 {
     z-index:-2;
+	transform:perspective(500px) rotateY(30deg) translateX(10px);
 }
 .gal .img.p3 {
     z-index:-3;
-    transform:rotate(-10deg) translateX(-50px);
+    transform:rotate(0deg) translateX(-40px) perspective(500px) rotateY(30deg) translateX(10px);
 }
 .gal .ttl {
     position:absolute;

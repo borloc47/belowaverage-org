@@ -6,7 +6,7 @@ $.getJSON('config/pages/Gallery.json', function(data) {
         var count = 0;
         $.each(this, function(key) {
             count++;
-            $('#tab .bWrap a.p'+picCount).append('<div class="img p'+count+'" style="background-image:url(\'static/img/gallery/'+k+'/'+key+'\');"></div>');
+            $('#tab .bWrap a.p'+picCount).append('<div class="img p'+count+'" style="background-image:url(\'https://api.belowaverage.org/v1/thumb/?size=x130&src='+encodeURIComponent(''+mem.main.thumbDomain+'/static/img/gallery/'+k+'/'+key)+'\');"></div>');
             if(count == 3) {
                 return false;
             }

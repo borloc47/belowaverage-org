@@ -1,4 +1,9 @@
 function draw(data) {
+	if(typeof mem.Projects.hash.more == 'string') {
+		var obj = {};
+		obj[mem.Projects.hash.more] = data[mem.Projects.hash.more];
+		data = obj;
+	}
 	$.each(data, function(k) {
 		var exp = '';
 		var body = '';
