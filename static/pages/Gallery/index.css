@@ -16,15 +16,6 @@
     margin:70px;
     color:inherit;
 }
-.gal:hover .img.p1 {
-    transform:rotate(10deg) translateX(70px);
-}
-.gal:hover .img.p2 {
-	transform:rotateY(0deg);
-}
-.gal:hover .img.p3 {
-	transform:rotate(-10deg) translateX(-70px);
-}
 .gal .img {
     width:180px;
     height:130px;
@@ -36,7 +27,7 @@
     background-color:white;
     background-repeat:no-repeat;
     background-position:50%;
-    box-shadow:0px 0px 10px rgba(0,0,0,.1);
+    box-shadow:0px 10px 20px rgba(0,0,0,.15);
     border:10px solid white;
     transition:.3s;
 }
@@ -52,6 +43,19 @@
     z-index:-3;
     transform:rotate(0deg) translateX(-40px) perspective(500px) rotateY(30deg) translateX(10px);
 }
+.gal:hover .img {
+	box-shadow:0px 0px 5px rgba(0,0,0,.1);
+}
+.gal:hover .img.p1 {
+    transform:rotate(10deg) translateX(70px);
+}
+.gal:hover .img.p2 {
+	transform:rotateY(0deg);
+}
+.gal:hover .img.p3 {
+	transform:rotate(-10deg) translateX(-70px);
+}
+
 .gal .ttl {
     position:absolute;
     bottom:0px;
