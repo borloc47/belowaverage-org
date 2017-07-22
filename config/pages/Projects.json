@@ -18,7 +18,7 @@
 				"target": "_blank"
 			}
         },
-		"expand": "Webdows is a dynamic window API for the web browser designed to look and feel like Microsoft Windows<br><br>2015 - Present<br><br>Latest Stable: 6.0.0000<br><br><h3>Features</h3><ul><li>Simple API</li><li>Built in preloader</li><li>Well documented</li><li>Supported by Chrome, Safari, Firefox, Edge, and IE 10+</li><li>Utilizes jQuery</li><li>99% CSS vector design. Bitmaps rarely used for styling</li><li>Customizable themes</li></ul>"
+		"expand": "Webdows is a dynamic window API for the web browser designed to look and feel like Microsoft Windows<br><br>2015 - Present<br><br>Latest Stable: 6.0.0000<br><br><h3>Features</h3><ul><li>Simple API</li><li>Built in preloader</li><li>Well documented</li><li>Supported by Chrome, Safari, Firefox, Edge, and IE 10+</li><li>Utilizes jQuery</li><li>99% CSS vector design. Bitmaps rarely used for styling</li><li>Customizable themes</li></ul><br><br><br><video poster=\"https://api.belowaverage.org/static/belowaverage.org/poster.png\" style=\"width:500px;height:300px;\" onclick=\"this.play();\" loop><source src=\"https://api.belowaverage.org/static/belowaverage.org/web.webm\"/><source src=\"https://api.belowaverage.org/static/belowaverage.org/web.mp4\"/></video>"
     },
 	"mcDash": {
         "slogan": "An Advanced Minecraft Server Dashboard",
