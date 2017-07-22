@@ -11,7 +11,7 @@ function draw(data) {
 			exp = 'expanded';
 			body = this.expand;
 		}
-		var html = '<span project="'+k+'" class="proj '+exp+'"><img src="'+this.background+'"><div class="head"><div class="ttl">'+k+'</div><div class="slogan">'+this.slogan+'</div>';
+		var html = '<span project="'+k+'" class="proj '+exp+'"><img src="'+this.background+'"><div class="head bWrap"><div class="ttl">'+k+'</div><div class="slogan">'+this.slogan+'</div>';
 		html = html + body;
 		html = html + '</div><div class="links">';
 		$.each(this.links, function(k) {

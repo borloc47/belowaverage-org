@@ -15,11 +15,15 @@
 	text-shadow:2px 2px 0px rgba(0,0,0,.15);
 }
 #projs .head {
-	position:absolute;
-	width:100%;
+	position:relative;
 }
-#projs .slogan, #projs .ttl, #projs .links {
-	background-color:;
+#projs .proj.expanded .head {
+	margin-top:20px;
+	margin-bottom:20px;
+}
+#projs .proj.expanded .links {
+	background-color:black;
+	position:fixed;
 }
 #projs .proj {
     display:inline-block;
@@ -31,7 +35,7 @@
 	position:relative;
 	text-shadow:1px 1px 0px rgba(0,0,0,.15);
 	overflow:hidden;
-	background:black;
+	background-color:black;
 }
 #projs .proj img {
 	position:absolute;
@@ -39,8 +43,8 @@
 	left:0px;
 	width:100%;
 	height:100%;
-	opacity:.2;
 	filter:blur(3px);
+	opacity:.2;
 }
 #projs .proj .links {
 	position:absolute;
@@ -91,10 +95,11 @@
 	filter: blur(50px);
 }
 #projs .proj.expanded {
-	position:absolute;
-	top:0px;
+	position:fixed;
+	overflow:auto;
+	top:40px;
 	left:0px;
-	height:100%;
+	height:calc(100% - 78px);
 	margin-bottom:0px;
 }
 ul {
