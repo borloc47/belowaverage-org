@@ -92,7 +92,7 @@
     content:"I";
 }
 #projs .proj.expanded img {
-	filter: blur(50px);
+	filter:blur(50px);
 }
 #projs .proj.expanded {
 	position:fixed;
